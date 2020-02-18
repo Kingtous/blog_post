@@ -107,6 +107,8 @@ git submodule update
 git submodule foreach git pull orgin master
 ```
 
+> 注意：若要修改子模块中的代码，要切换到**master**分支再修改！否则在一个**detach**的分支修改无法提交，除非将**detach**的分支生成一个新的分支
+
 #### 3.Pull含有子模块的仓库
 
 - Pull主仓库
@@ -121,4 +123,3 @@ git pull old.git
 ```shell
 git submodule foreach git pull orgin master
 ```
-
